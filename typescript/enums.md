@@ -70,4 +70,6 @@ The const modifier is useful in situations where enum values are inlined, and yo
 If an enum declaration does not have the const modifier, references to its members are inlined only if the member is non-computed. <br/>
 
 A __declare enum__ will not emit an object. References to its members are inlined if those members are computed. <br/>
-A __declare const enum__ is not different from a const enum, except in the case of ```--preserveConstEnums```, __non-declare const__ enums will emit an object. Inlining is not affected. This is useful for debugging.
+A __declare const enum__ is not different from a const enum, except in the case of ```--preserveConstEnums```, __non-declare const__ enums will emit an object. Inlining is not affected. This is useful for debugging.<br />
+
+Reference: https://stackoverflow.com/questions/28818849/how-do-the-different-enum-variants-work-in-typescript
