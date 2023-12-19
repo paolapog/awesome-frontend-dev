@@ -21,7 +21,7 @@ JavaScript has the following kinds of __scopes__: <br/>
 - __Global__ scope: The default scope for all code running in script mode.
 - __Module__ scope: The scope for code running in module mode.
 - __Function__ scope: The scope created with a function.
-- __Block__ scope: The scope created with a block (with `let` or `const` keyword).
+- __Block__ scope: The scope created with a block (with [let or const keyword](./let-const-var.md)).
 
 ## Global Scope
 The global scope is the outermost scope of a JavaScript program. The global scope contains all the variables and functions that are not contained within a function. <br />
