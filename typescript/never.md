@@ -39,9 +39,9 @@ function exhaustiveCheck(fruit: Fruit): never {
 ```
 <br />
 
-Difference between **never** and **void**:
+### Difference between never and void:
 
-The 'void' type can accommodate undefined or null as a value, while 'never' cannot have any value. Consider the following example:
+The `void` type can accommodate undefined or null as a value, while `never` cannot have any value. Consider the following example:
 
 ```typescript
 let someValue: void = undefined;
@@ -56,4 +56,4 @@ let greeting: void = shoutHello();
 console.log(greeting); // Result: undefined
 ```
 
-As seen in this revised example, the variable greeting is assigned the value undefined, indicating that the ```shoutHello()``` function internally returns undefined, even though its declared return type is 'void'. Attempting to use the 'never' type for greeting would trigger a compile-time error, as 'void' is not assignable to 'never'.
+As seen in this revised example, the variable greeting is assigned the value undefined, indicating that the ```shoutHello()``` function internally returns undefined, even though its declared return type is `void`. Attempting to use the `never` type for greeting would trigger a compile-time error, as `void` is not assignable to `never`.

@@ -29,7 +29,7 @@ enum Direction {
 }
 ```
 You can have also a mixed enum with string and numeric members, but it's not advised to do so. <br />
-It is possible to ```declare``` entities that the compiler should be aware of without generating actual code. This proves beneficial when dealing with libraries like jQuery, where you desire type information about an object (e.g., $) but do not require the compiler to produce any code. Declarations made in this way are considered to be in an "ambient" context, as outlined in the specification and other documentation. It's essential to recognize that all declarations in a ```.d.ts``` file are inherently "ambient," with the presence or absence of an explicit declare modifier depending on the type of declaration. <br/>
+It is possible to ```declare``` entities that the compiler should be aware of without generating actual code. This proves beneficial when dealing with libraries like jQuery, where you desire type information about an object (e.g., $) but do not require the compiler to produce any code. Declarations made in this way are considered to be in an **ambient** context, as outlined in the specification and other documentation. It's essential to recognize that all declarations in a ```.d.ts``` file are inherently "ambient," with the presence or absence of an explicit declare modifier depending on the type of declaration. <br/>
 For reasons related to performance and code size, it is commonly more efficient to replace a reference to an enum member with its numeric equivalent during the compilation process. This process is called **inlining** (substitution), and it is performed when the compiler can guarantee that the enum member is a constant (so it doesn't change in time). <br/>
 
 ```typescript

@@ -41,7 +41,8 @@ let userCard = `
 
 console.log(userCard);
 ```
-Another major feature is the **Tagged templates**: <br/>  
+Another major feature is the **Tagged templates** <br/>  
+### Tagged Templates:
 They are a more advanced form of template literals and they allow you to use a function to process the template literal, rather than just evaluating it as a string. This provides you with more control over how the strings and embedded expressions are concatenated.
   
 ```javascript
