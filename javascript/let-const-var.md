@@ -1,10 +1,10 @@
 In JavaScript, var, let, and const are used to declare variables, but they have some differences:
 
-var: It is function-scoped when declared within a function. This means that it is available within the function it is declared in. If it is declared outside any function, it is globally scoped. var variables can be re-declared and updated.
+**var**: It is function-scoped when declared within a function. This means that it is available within the function it is declared in. If it is declared outside any function, it is globally scoped. var variables can be re-declared and updated.
 
-let: It is block-scoped, meaning it is only available within the block it is declared in. let variables can be updated but not re-declared.
+**let**: It is block-scoped, meaning it is only available within the block it is declared in. let variables can be updated but not re-declared.
 
-const: Just like let, const is also block-scoped. However, const variables can neither be updated nor re-declared. They must be initialized at the time of declaration.
+**const**: Just like let, const is also block-scoped. However, const variables can neither be updated nor re-declared. They must be initialized at the time of declaration.
 
 Here is a simple example to illustrate the differences:
 
