@@ -28,7 +28,7 @@ In the second loop, `let` is block-scoped, so each loop iteration has its own j.
 
 const is also block-scoped, but it can't be reassigned after its initial assignment, so trying to reassign k results in a TypeError. <br />
 
-### Benefits using let and const over var:
+## Benefits using let and const over var:
 
 __Block Scope__: Unlike `var`, which is function-scoped, let and const are block-scoped. This means they exist only within the block they are defined in, which can help prevent variable leakage and unexpected behavior in your code.
 
