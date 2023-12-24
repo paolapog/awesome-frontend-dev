@@ -3,7 +3,7 @@ They serve as a bridge to fill the gap between the JavaScript language features 
 When a new JavaScript feature or API is introduced, it takes time for all major browsers to adopt and support it. During this transitional period, developers can employ polyfills to ensure their code functions consistently across various browsers.
 Polyfills work by identifying whether a specific feature or API is absent and then supplying a custom implementation of that feature using existing JavaScript capabilities.
 Polyfills are usually available as a library. They can be included in a web page using a `<script>` tag or loaded dynamically at runtime using a module [bundler](./bundler-vs-transpiler.md) such as Webpack or Rollup.
-Polyfills are not a replacement for [transpilers ](./bundler-vs-transpiler.md) such as Babel. Transpilers convert code written in one language to another. For example, Babel converts code written in ES6 to ES5 so that it can be executed in older browsers. Polyfills, on the other hand, are used to add support for new features that are not available in older browsers. <br/>
+Polyfills are not a replacement for [transpilers](./bundler-vs-transpiler.md) such as Babel. Transpilers convert code written in one language to another. For example, Babel converts code written in ES6 to ES5 so that it can be executed in older browsers. Polyfills, on the other hand, are used to add support for new features that are not available in older browsers. <br/>
 Polyfills are not a new concept. They have been around for a long time and have been used to add support for features such as `Array.prototype.forEach` and `Array.prototype.map` in older browsers. <br />
 Example of a polyfill for `Array.prototype.map`:
 ```js
