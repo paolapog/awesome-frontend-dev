@@ -93,4 +93,27 @@ console.log(x); // 1
 console.log(x); // ReferenceError: x is not defined
 ```
 
+## Bonus Point: Lexical Scope
+Lexical scope (also known as static scope) in JavaScript refers to the fact that every inner level can access its outer levels. There is a hierarchy of variables that is not affected by function invocation. This model is called lexical because it's based on __where variables and blocks of scope are authored, by you, at write (author) time__.
 
+When a variable is used in JavaScript, the JavaScript engine will try to find the variable's value in the current scope. If it can't find it, it will look in the outer scope and will continue to do so up the scope chain until it either finds the variable or reaches the global scope.
+
+```javascript
+let globalVar = "I'm a global variable";
+
+function outerFunction() {
+  let outerVar = "I'm an outer variable";
+  
+  function innerFunction() {
+    let innerVar = "I'm an inner variable";
+    console.log(innerVar); // I'm an inner variable
+    console.log(outerVar); // I'm an outer variable
+    console.log(globalVar); // I'm a global variable
+  }
+  
+  innerFunction();
+}
+
+outerFunction();
+```
+`innerFunction` has access to its own scope (where `innerVar` is defined), the outer function's scope (where `outerVar` is defined), and the global scope (where `globalVar` is defined). This is lexical scoping: the access to variables is determined by the position of the functions in the code, not by the order in which they are called.
