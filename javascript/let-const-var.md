@@ -39,3 +39,25 @@ __Immutable References__: `const` allows you to create references that can't be 
 __Prevents Re-declaration__: `let` and `const` prevent re-declaring the same variable within the same scope, which can help catch errors.
 
 Overall, `let` and `const` provide more control and help write cleaner and more predictable code, reducing the likelihood of bugs.
+
+## Temporal Dead Zone (TDZ)
+The Temporal Dead Zone (TDZ) is a behavior in JavaScript that occurs with `let` and `const` variables. It's the period between entering the [scope](./scope.md) where the variable is declared and the line where the declaration occurs. During this period, any reference to the variable will result in a ReferenceError.
+
+Here's an example:
+
+```javascript
+function myFunc() {
+  console.log(myVar); // ReferenceError: myVar is not defined
+  let myVar = 2;
+}
+
+myFunc();
+```
+
+In this example, `myVar` is in the TDZ from the start of the function scope until the line where it's defined (`let myVar = 2;`). The attempt to access `myVar` in the `console.log` statement results in a ReferenceError because it's within the TDZ.
+
+Kyle Simpson, in his book "You Don't Know JS: Scope & Closures", explains the TDZ as follows:
+
+> "If a variable is accessed in its TDZ, a ReferenceError will be thrown. This error is usually seen when trying to access a variable before it's been declared. The TDZ ends once a variable has actually been declared, not assigned."
+
+This means that the TDZ continues to exist until the variable declaration (not necessarily the assignment) is encountered in the code.
