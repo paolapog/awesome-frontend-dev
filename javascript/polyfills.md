@@ -1,5 +1,5 @@
-Polyfills are piece of code designed to extend modern functionality to older browsers that lack built-in support for those features. 
-They serve as a bridge to fill the gap between the JavaScript language features and APIs that are available in modern browsers and the limited capabilities of older browser versions. <br />
+Polyfills are piece of code designed **to extend modern functionality** to older browsers that lack built-in support for those features. 
+They serve as a **bridge to fill the gap** between the JavaScript language features and APIs that are available in modern browsers and the limited capabilities of older browser versions. <br />
 When a new JavaScript feature or API is introduced, it takes time for all major browsers to adopt and support it. During this transitional period, developers can employ polyfills to ensure their code functions consistently across various browsers.
 Polyfills work by identifying whether a specific feature or API is absent and then supplying a custom implementation of that feature using existing JavaScript capabilities.
 Polyfills are usually available as a library. They can be included in a web page using a `<script>` tag or loaded dynamically at runtime using a module [bundler](./bundler-vs-transpiler.md) such as Webpack or Rollup.
