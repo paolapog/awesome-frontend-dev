@@ -72,7 +72,7 @@ let greet = () => {
 
 Pros:
 - More concise syntax.
-- Does not have its own [this](./this-keyword.md), arguments, [super](./new-keyword.md), or new.target. These are all taken from the outer function when the arrow function is created. This can be a pro when you want `this` to refer to the outer context.
+- Does not have its own [this](./this-keyword.md) (so neither [call, apply and bind](./call-apply-bind.md) methods), arguments, [super](./new-keyword.md), or new.target. These are all taken from the outer function when the arrow function is created. This can be a pro when you want `this` to refer to the outer context.
 
 Cons:
 - Not suitable for object methods because `this` does not refer to the object itself.
