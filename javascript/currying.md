@@ -23,3 +23,15 @@ function sum(a) {
 console.log(sum(1)(2)(3)) // 6
 
 ```
+
+**Pros**:
+- It can make your code more readable and expressive.
+- It allows you to create specialized functions from more general ones.
+- It can be useful in asynchronous code because it allows you to delay a computation until all the arguments are available.
+
+**Cons**:
+- It can make your code harder to understand if you're not familiar with the concept.
+- It can lead to a performance overhead because of the creation of many intermediate functions.
+
+Kyle Simpson, author of the "You Don't Know JS" book series, says: 
+"Currying is a way of thinking about functions that allows us to use the functional nature of JavaScript to our advantage."
