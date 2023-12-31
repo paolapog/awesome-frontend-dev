@@ -69,7 +69,7 @@ The `range` generator function takes two arguments, `start` and `end`. These arg
 
 ## Use cases
 
-1. **Asynchronous Programming**: Generators can be used to write asynchronous code in a synchronous manner, making it easier to read and understand. This is particularly useful when dealing with Promises or async/await.
+1. **Asynchronous Programming**: Generators can be used to write asynchronous code in a synchronous manner, making it easier to read and understand. This is particularly useful when dealing with [Promise or async/await](./async-await-promises.md) .
 
 2. **Control Flow Management**: Generators can be used to manage control flow in your applications. For example, you can use a generator to pause and resume execution as needed.
 

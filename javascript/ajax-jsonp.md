@@ -13,7 +13,7 @@ fetch('https://api.example.com/data', {
   console.error('Error:', error);
 });
 ```
-1. `fetch('https://api.example.com/data', { method: 'GET' })`: This line initiates a network request to the URL 'https://api.example.com/data' using the HTTP GET method. `fetch` returns a Promise that resolves to the Response object representing the response to the request.
+1. `fetch('https://api.example.com/data', { method: 'GET' })`: This line initiates a network request to the URL 'https://api.example.com/data' using the HTTP GET method. `fetch` returns a [Promise](./async-await-promises.md) that resolves to the Response object representing the response to the request.
 
 2. `.then(response => response.json())`: This line is called after the Promise returned by `fetch` is resolved. The `response.json()` method reads the body of the response and returns another Promise that resolves with the result of parsing the body text as JSON.
 
