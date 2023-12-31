@@ -30,5 +30,3 @@ Kyle Simpson, in his "You Don't Know JS" series, has a lot to say about `this`:
 And:
 
 > "I think `this` is cool, but it's also easily one of the most misunderstood mechanisms in JavaScript and is often avoided as such."
-
-Understanding how `this` works is crucial for writing effective JavaScript code.
