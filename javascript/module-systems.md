@@ -76,5 +76,5 @@ export default {
 **Cons**:
 
 - More complex syntax compared to CommonJS.
-- Dynamic loading requires using the `import()` function which returns a Promise.
+- Dynamic loading requires using the `import()` function which returns a [Promise](./async-await-promises.md) .
 - Older browsers and versions of Node.js may require a transpiler like Babel.

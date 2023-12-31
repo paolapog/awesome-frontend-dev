@@ -46,7 +46,7 @@ Think of it like this: you're doing your homework (the current script), and you 
 
 **Examples of microtasks include Promise callbacks and DOM mutations.**
 
-Promises in JavaScript represent a value that may not be available yet. When you create a Promise, you provide a function that will be called when the value is available (the Promise is resolved) or when something goes wrong (the Promise is rejected). This function is a microtask.
+[Promises](./async-await-promises.md) in JavaScript represent a value that may not be available yet. When you create a Promise, you provide a function that will be called when the value is available (the Promise is resolved) or when something goes wrong (the Promise is rejected). This function is a microtask.
 
 DOM mutations are changes to the structure of the web page. When you change the web page structure, the browser doesn't update the display right away. Instead, it waits until all the changes have been made, then updates the display in one go. This update is a microtask.
 
