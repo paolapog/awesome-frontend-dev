@@ -18,8 +18,11 @@ button.animate(0, 0, "ease-in");
 button.animate(0, 0, "uneasy"); // error: "uneasy" is not allowed here
 ```
 Template literal types **build** on string literal types, and have the ability to expand into many strings via unions.<br />
-They have the same syntax as [template literal strings in JavaScript](../javascript/template-literal-strings.md), but are used in type positions. When used with concrete literal types, a template literal produces a new string literal type by concatenating the contents. <br/>
-Some __use cases__: <br/>
+They have the same syntax as [template literal strings in JavaScript](../javascript/template-literal-strings.md), but are used in type positions. When used with concrete literal types, a template literal produces a new string literal type by concatenating the contents. 
+
+
+Some **use cases**:
+
 - **String interpolation** via tagged template literals
 example: 
 ```typescript
@@ -30,6 +33,7 @@ let fish: Fish = "one fish"; // OK
 fish = "two fish"; // OK
 fish = "red fish"; // OK
 ```
+
 - **Type transformation** via mapped types
 example: 
 ```typescript
@@ -50,6 +54,7 @@ type FunnyPerson = {
     getLocation: () => string;
 }
 ```
+
 - **Type transformation** via key remapping in mapped types
 example: 
 ```typescript
@@ -66,6 +71,7 @@ type TypelessCircle = {
     radius: number;
 }
 ```
+
 - **Type transformation** via recursive mapped types
 example: 
 ```typescript
