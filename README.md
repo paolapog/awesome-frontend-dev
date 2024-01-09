@@ -17,14 +17,19 @@ Remember to also put into practice what you learn: theory is good, but without p
 
 
 [paid]
+
 [Frontend Masters: Will Sentance - JS hard parts - v2](https://frontendmasters.com/courses/javascript-hard-parts-v2/)
+
 [Frontend Masters: Kyle Simpson - Deep JS - v3](https://frontendmasters.com/courses/deep-javascript-v3/)
 
 or
 
 [free]
+
 [Kyle Simpson, You Dont Know JS - 1st edition](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed)
+
 [Kyle Simpson, You Dont Know JS - 2nd edition - STILL IN DRAFT](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed)
+
 [Eloquent JS](https://eloquentjavascript.net/index.html)
 
 
@@ -33,19 +38,23 @@ or
 
 
 [paid]
+
 [Frontend Masters: Mike North - Typescript v4](https://frontendmasters.com/courses/typescript-v4/)
+
 [Matt Pocock, Total Typescript](https://www.totaltypescript.com/)
 
 or
 
 
 [free]
+
 [Learn Typescript](https://learntypescript.dev/)
 
 ## CSS:
 
 
 [paid]
+
 [Josh W Comeau, CSS for JS dev](https://css-for-js.dev/)
 
 
@@ -53,11 +62,13 @@ or
 
 
 [free]
+
 Just the first modules about C, Data Structures and Algorithms: [CS50 Harvard, Intro to Computer Science]( https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science)
 
 ## Software design and Design Patterns:
 
-
 [free]
+
 [Coursera: Software Design Architecture](https://www.coursera.org/specializations/software-design-architecture)
+
 [Refactoring Guru, Design Patterns](https://refactoring.guru/design-patterns)
