@@ -4,14 +4,15 @@
 I created this repository because I often see frontend developer beginners focusing more on the framework/library rather than the fundamentals. I have created three folders with JS, TS, and CSS, covering various topics (including those most frequently asked in interviews) that can help build a solid foundation. 
 Note: these are knowledge "__bites__", and I expect there to be a curiosity to __investigate deeper__ at some point.
 
-## Resources
-Fundamentals extend not only through JS, TS, and CSS but also through design patterns, data structures, and algorithms. Below, I will list a "must have" resources (both paid and free) that complement what has been written above.
-I strongly recommend the __paid__ ones, as they are more comprehensive and also include interesting exercises that you can undertake: think of it as an investment in your future.
-
 ## Mindset and learning pace
 Remember to also put into practice what you learn: theory is good, but without practice, you won't be able to assimilate fundamental concepts. 
 **ESSENTIAL**: maintain a curious mindset and avoid rushing, but above all, learn at a slow pace. Since these are dense topics, if you go too fast, you risk missing at least one-third of what was written above. So: go slowly + lots of practice.
 **You've got this!**
+
+## Resources
+Fundamentals extend not only through JS, TS, and CSS but also through design patterns, data structures, and algorithms. Below, I will list a "must have" resources (both paid and free) that complement what has been written above.
+I strongly recommend the __paid__ ones, as they are more comprehensive and also include interesting exercises that you can undertake: think of it as an investment in your future.
+
 
 ## JS:
 
