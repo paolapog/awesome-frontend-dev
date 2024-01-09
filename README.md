@@ -14,7 +14,7 @@ Note: these are knowledge "__bites__", and I expect there to be a curiosity to _
 - [Call vs apply vs bind methods](./javascript/call-apply-bind.md)
 - [Closure](./javascript/closure.md)
 - [Coercion](./javascript/coercion.md)
-- [Const vs Object.freeze method](./javascript/const-vs-object-freeze.md)
+- [Const vs Object.freeze method](./javascript/const-object-freeze.md)
 - [Currying technique](./javascript/currying.md)
 - [Dynamic import expression](./javascript/dynamic-import.md)
 - [Event propagation, event bubbling and event capturing](./javascript/event-bubbling-capturing.md)
