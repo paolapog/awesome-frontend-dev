@@ -82,6 +82,20 @@ Note: these are knowledge "__bites__", and I expect there to be a curiosity to _
 - [Z-index property](./css/z-index.md)
 
 
+### General
+- [Accessibility](./accessibility.md)
+- [Authentication strategies](./authentication-strategies.md)
+- [Content Security Policy CSP](./content-security-policy.md)
+- [Client Side Rendering vs Server Side Rendering vs Static Site Generation](./csr-ssr-ssg.md)
+- [Internet - HTTP - DNS - Domain Name - Web Hoisting - Browser](./internet.md)
+- [OWASP Top 10](./owasp)
+- [Service Workers](./service-workers.md)
+- [Local storage vs session storage vs cookies](./storage.md)
+- [Web Sockets](./web-sockets.md)
+- [Web Workers](./web-workers.md)
+
+
+
 ## Mindset and learning pace
 Remember to also put into practice what you learn: theory is good, but without practice, you won't be able to assimilate fundamental concepts. 
 **ESSENTIAL**: maintain a curious mindset and avoid rushing, but above all, learn at a slow pace. Since these are dense topics, if you go too fast, you risk missing at least one-third of what was written above. So: go slowly + lots of practice.
