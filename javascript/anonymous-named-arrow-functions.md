@@ -5,9 +5,10 @@ In JavaScript, you can define functions in several ways, two of which are __anon
 An anonymous function is a function without a name.
 
 ```javascript
-let greet = function() {
-  console.log("Hello, world!");
-};
+// The anonymous function is passed as the first argument
+  setTimeout(function() {
+    console.log("This message is displayed after 3 seconds");
+  }, 3000);
 ```
 
 Pros:
