@@ -9,7 +9,7 @@ Note: these are knowledge "__bites__", and I expect there to be a curiosity to _
 ### JS
 - [Ajax vs JSOP](./javascript/ajax-jsonp.md)
 - [Anonymous vs named vs arrow functions](./javascript/anonymous-named-arrow-functions.md)
-- [Async/await, promises and callback hell](./javascript/async-await-promises.md)
+- [Callback hell, Promises and Async/Await](./javascript/async-await-promises.md)
 - [Bundler vs transpiler](./javascript/bundler-vs-transpiler.md)
 - [Call vs apply vs bind methods](./javascript/call-apply-bind.md)
 - [Closure](./javascript/closure.md)

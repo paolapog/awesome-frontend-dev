@@ -1,3 +1,67 @@
+## Callback Hell
+
+Callback hell, also known as the Pyramid of Doom, refers to a situation where callbacks are nested within callbacks, leading to code that is difficult to read and understand. This often happens when dealing with multiple asynchronous operations that need to be performed in a specific order.
+
+Here's an example of callback hell:
+
+```javascript
+getData(function(a) {
+    getMoreData(a, function(b) {
+        getMoreData(b, function(c) {
+            getMoreData(c, function(d) {
+                // Do something with 'd'
+            });
+        });
+    });
+});
+```
+
+In this example, each `getMoreData` function takes some data as input, performs an asynchronous operation, and then calls a callback function with the result. The callbacks are nested within each other because each operation depends on the result of the previous operation.
+
+This pattern can lead to code that is hard to read and understand, especially as the number of nested callbacks increases. It can also make error handling difficult, as each callback would need to handle errors individually.
+
+To mitigate callback hell, you can:
+
+1. **Modularize**: Break down your code into smaller, reusable functions.
+2. **Use Promises or Async/Await**: These features of JavaScript allow you to write asynchronous code that is easier to read and understand.
+3. **Use a flow control library**: Libraries like async.js provide functions for managing and organizing asynchronous code.
+
+Remember, the key to avoiding callback hell is to keep your code structured and manageable, regardless of the specific techniques you use.
+
+## Promises
+
+A Promise in JavaScript is an object that represents a value which may not be available yet, but will be resolved at some point in the future or it will be rejected. It's a way to handle asynchronous operations without blocking the rest of your code.
+
+Here's a more detailed example:
+
+```javascript
+let promise = new Promise((resolve, reject) => {
+    // Simulate an asynchronous operation using setTimeout
+    setTimeout(() => {
+        let success = Math.random() > 0.5; // Random success or failure
+
+        if (success) {
+            resolve("Promise resolved!"); // If successful, resolve the promise
+        } else {
+            reject("Promise rejected!"); // If not successful, reject the promise
+        }
+    }, 1000);
+});
+
+promise
+    .then(value => console.log(value)) // Handle resolved value
+    .catch(error => console.error(error)); // Handle rejection reason
+```
+
+In this example, a new Promise is created. The Promise constructor takes a function as an argument, which itself takes two parameters: `resolve` and `reject`, which are both functions. 
+
+If the asynchronous operation is successful, you call `resolve` with the result. This changes the Promise's state from "pending" to "fulfilled", and the result is passed to the `then` method.
+
+If the operation fails, you call `reject` with the reason for the failure. This changes the Promise's state from "pending" to "rejected", and the reason is passed to the `catch` method.
+
+Promises can be chained together to perform a series of asynchronous operations in a specific order. Each `then` returns a new Promise, allowing you to chain them together. If any Promise in the chain is rejected, the `catch` at the end will be triggered.
+
+
 ## Async/Await
 
 Async/Await is a modern way to handle asynchronous operations in JavaScript. It is built on top of Promises and allows you to write asynchronous code in a more synchronous manner.
@@ -34,69 +98,6 @@ fetchUser();
 ```
 
 A try/catch block is used to handle any errors that might occur during the fetch operation or while parsing the JSON. If an error is thrown inside the try block, execution will immediately jump to the catch block, where the error can be handled. This is similar to how error handling works in synchronous code, making it easier to reason about.
-
-## Promises
-
-A Promise in JavaScript is an object that represents a value which may not be available yet, but will be resolved at some point in the future or it will be rejected. It's a way to handle asynchronous operations without blocking the rest of your code.
-
-Here's a more detailed example:
-
-```javascript
-let promise = new Promise((resolve, reject) => {
-    // Simulate an asynchronous operation using setTimeout
-    setTimeout(() => {
-        let success = Math.random() > 0.5; // Random success or failure
-
-        if (success) {
-            resolve("Promise resolved!"); // If successful, resolve the promise
-        } else {
-            reject("Promise rejected!"); // If not successful, reject the promise
-        }
-    }, 1000);
-});
-
-promise
-    .then(value => console.log(value)) // Handle resolved value
-    .catch(error => console.error(error)); // Handle rejection reason
-```
-
-In this example, a new Promise is created. The Promise constructor takes a function as an argument, which itself takes two parameters: `resolve` and `reject`, which are both functions. 
-
-If the asynchronous operation is successful, you call `resolve` with the result. This changes the Promise's state from "pending" to "fulfilled", and the result is passed to the `then` method.
-
-If the operation fails, you call `reject` with the reason for the failure. This changes the Promise's state from "pending" to "rejected", and the reason is passed to the `catch` method.
-
-Promises can be chained together to perform a series of asynchronous operations in a specific order. Each `then` returns a new Promise, allowing you to chain them together. If any Promise in the chain is rejected, the `catch` at the end will be triggered.
-
-## Callback Hell
-
-Callback hell, also known as the Pyramid of Doom, refers to a situation where callbacks are nested within callbacks, leading to code that is difficult to read and understand. This often happens when dealing with multiple asynchronous operations that need to be performed in a specific order.
-
-Here's an example of callback hell:
-
-```javascript
-getData(function(a) {
-    getMoreData(a, function(b) {
-        getMoreData(b, function(c) {
-            getMoreData(c, function(d) {
-                // Do something with 'd'
-            });
-        });
-    });
-});
-```
-
-In this example, each `getMoreData` function takes some data as input, performs an asynchronous operation, and then calls a callback function with the result. The callbacks are nested within each other because each operation depends on the result of the previous operation.
-
-This pattern can lead to code that is hard to read and understand, especially as the number of nested callbacks increases. It can also make error handling difficult, as each callback would need to handle errors individually.
-
-To mitigate callback hell, you can:
-
-1. **Modularize**: Break down your code into smaller, reusable functions.
-2. **Use Promises or Async/Await**: These features of JavaScript allow you to write asynchronous code that is easier to read and understand.
-3. **Use a flow control library**: Libraries like async.js provide functions for managing and organizing asynchronous code.
-
-Remember, the key to avoiding callback hell is to keep your code structured and manageable, regardless of the specific techniques you use.
 
 ## Pros and Cons
 
