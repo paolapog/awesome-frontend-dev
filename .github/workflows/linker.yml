@@ -19,4 +19,4 @@ jobs:
 
         with:
           fail: true
-          args: --exclude-path '**/css' --exclude-path '**/javascript' --exclude-path '**/typescript' --exclude-mail
+          args: --base . --verbose --no-progress './README.md'
