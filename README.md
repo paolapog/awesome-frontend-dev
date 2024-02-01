@@ -7,7 +7,7 @@ Note: these are knowledge "__bites__", and I expect there to be a curiosity to _
 ## Navigation
 
 ### JS
-- [Ajax vs JSOP](./javascript/ajax-jsonp.md)
+- [Ajax vs JSONP](./javascript/ajax-jsonp.md)
 - [Anonymous vs named vs arrow functions](./javascript/anonymous-named-arrow-functions.md)
 - [Callback hell, Promises and Async/Await](./javascript/async-await-promises.md)
 - [Bundler vs transpiler](./javascript/bundler-vs-transpiler.md)
