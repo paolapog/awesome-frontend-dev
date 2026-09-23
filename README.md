@@ -93,6 +93,7 @@ Note: these are knowledge "__bites__", and I expect there to be a curiosity to _
 - [Local storage vs session storage vs cookies](./storage.md)
 - [Web Sockets](./web-sockets.md)
 - [Web Workers](./web-workers.md)
+- [KeyDrift](https://keydrift.dev) - Scans deployed HTML and JavaScript for exposed secrets while recognizing public browser credentials that should not be treated as leaks.
 
 
 
